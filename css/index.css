@@ -270,7 +270,7 @@ header {
   border-radius: 10px;
   margin: 0 10px 20px;
   padding: 6px 0;
-  background-color: #5F9EA0;
+  background-color: #17A2B8;
   color: white;
   cursor: pointer;
   height: 30px;
@@ -281,5 +281,56 @@ header {
 }
 .home .content-pick .destination .btn:hover {
   background-color: #FFEBCD;
-  color: #5F9EA0;
+  color: #17A2B8;
+  margin: 0 10px 20px;
+  padding: 6px 0;
+}
+@media (max-width: 500px) {
+  header .nav-header {
+    flex-direction: column;
+    justify-content: center;
+  }
+  header .nav-header .title {
+    justify-content: center;
+  }
+  header .nav-header #nav a {
+    margin: 1%;
+  }
+  .container .content-header,
+  .home .content-header {
+    flex-direction: column;
+  }
+  .container .content-section,
+  .home .content-section {
+    flex-direction: column;
+    align-content: center;
+  }
+  .container .content-section .text-content,
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .container .content-section .img-content,
+  .home .content-section .img-content {
+    width: 90%;
+    margin: 4%;
+  }
+  .container .inverse-content,
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    justify-items: center;
+  }
+  .container .inverse-content .img-fluid,
+  .home .inverse-content .img-fluid {
+    width: 90%;
+  }
+  .container .content-destination,
+  .home .content-destination {
+    width: 100%;
+    margin: 1%;
+  }
+  .container .content-destination .destination,
+  .home .content-destination .destination {
+    display: flex;
+    flex-direction: column;
+  }
 }

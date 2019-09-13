@@ -26,6 +26,7 @@ header {
     .text-content {
       width: 48%;
       padding-right: 1%;
+
     }
 
     .img-content {
@@ -36,6 +37,7 @@ header {
         border-radius: 10px;
       }
     }
+
   }
 
   .inverse-content {
@@ -73,10 +75,70 @@ header {
       margin-bottom: 30px;
 
       .btn {
-        .custom-btn (150px, 1.6rem);
+        .custom-btn(150px, 1.6rem);
       }
     }
   }
 }
 
 // home
+
+@media @mobile {
+  header {
+    .nav-header {
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        justify-content: center;
+      }
+
+      #nav a {
+        margin: 1%;
+      }
+    }
+  }
+
+  .container,
+  .home {
+    .content-header {
+      flex-direction: column;
+    }
+
+    .content-section {
+      flex-direction: column;
+      align-content: center;
+
+      .text-content {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 90%;
+        margin: 4%;
+      }
+    }
+
+    .inverse-content {
+      flex-direction: column-reverse;
+      justify-items: center;
+
+      .img-fluid {
+        width: 90%;
+
+      }
+    }
+
+    .content-destination {
+      width: 100%;
+      margin: 1%;
+
+      .destination {
+        display: flex;
+        flex-direction: column;
+
+      }
+    }
+
+  }
+}
