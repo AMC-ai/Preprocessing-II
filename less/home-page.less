@@ -1,4 +1,21 @@
+header {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px dashed silver;
+  padding: 20px 0;
+
+}
+
 .home {
+
+  .content-header {
+    padding-bottom: 30px;
+    border-bottom: 2px dashed @navigation-border;
+
+    img {
+      margin-bottom: 10px;
+    }
+  }
 
   .content-section {
     margin: 30px 0;
@@ -6,11 +23,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
     .text-content {
       width: 48%;
       padding-right: 1%;
+
     }
 
     .img-content {
@@ -21,6 +37,7 @@
         border-radius: 10px;
       }
     }
+
   }
 
   .inverse-content {
@@ -56,6 +73,72 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      .btn {
+        .custom-btn(150px, 1.6rem);
+      }
     }
   }
-}// home
+}
+
+// home
+
+@media @mobile {
+  header {
+    .nav-header {
+      flex-direction: column;
+      justify-content: center;
+
+      .title {
+        justify-content: center;
+      }
+
+      #nav a {
+        margin: 1%;
+      }
+    }
+  }
+
+  .container,
+  .home {
+    .content-header {
+      flex-direction: column;
+    }
+
+    .content-section {
+      flex-direction: column;
+      align-content: center;
+
+      .text-content {
+        width: 100%;
+      }
+
+      .img-content {
+        width: 90%;
+        margin: 4%;
+      }
+    }
+
+    .inverse-content {
+      flex-direction: column-reverse;
+      justify-items: center;
+
+      .img-fluid {
+        width: 90%;
+
+      }
+    }
+
+    .content-destination {
+      width: 100%;
+      margin: 1%;
+
+      .destination {
+        display: flex;
+        flex-direction: column;
+
+      }
+    }
+
+  }
+}
